@@ -73,17 +73,18 @@
     <section id="bestall" class="card">
       <h2>Beställ din dator</h2>
       <p>Fyll i formuläret nedan så återkommer vi med en offert baserat på dina behov.</p>
-      <!-- Formspree integrated to send to nordicbuilds@hotmail.com -->
+      <!-- Formspree form with previous fields -->
       <form action="https://formspree.io/f/xkgvdjgj" method="POST">
-        <label>
-          Din e-post:
-          <input type="email" name="email" required>
-        </label>
-        <label>
-          Ditt meddelande:
-          <textarea name="message" required></textarea>
-        </label>
-        <button type="submit">Skicka</button>
+        <input type="text" name="namn" placeholder="Ditt namn" required>
+        <input type="email" name="email" placeholder="Din e-post" required>
+        <select name="budget" required>
+          <option value="">Välj budget</option>
+          <option value="5000-7000">5000 - 7000 kr</option>
+          <option value="7000-10000">7000 - 10 000 kr</option>
+          <option value="10000+">10 000 kr +</option>
+        </select>
+        <textarea name="anvandning" rows="4" placeholder="Vad ska datorn användas till? (t.ex. gaming, skolarbete, streaming)" required></textarea>
+        <button type="submit">Skicka beställning</button>
       </form>
       <p id="thanks">Tack! Vi har mottagit din beställning.</p>
     </section>
@@ -116,4 +117,3 @@
   </script>
 </body>
 </html>
-
