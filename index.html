@@ -53,17 +53,17 @@
       <p class="example-note">Bilderna är exempel. Varje dator byggs efter dina behov och budget.</p>
       <div class="products">
         <div class="product-card">
-          <img src="images/budget.jpg" alt="Budgetdator exempel">
+          <img src="budget.jpg" alt="Budgetdator exempel">
           <h3>Budget Gaming</h3>
           <p>Perfekt för nybörjaren. Prisvärd dator med stabil prestanda.</p>
         </div>
         <div class="product-card">
-          <img src="images/pro.jpg" alt="Gaming Pro exempel">
+          <img src="pro.jpg" alt="Gaming Pro exempel">
           <h3>Gaming Pro</h3>
           <p>För den som vill spela de senaste spelen med bra flyt.</p>
         </div>
         <div class="product-card">
-          <img src="images/custom.jpg" alt="Custom Build exempel">
+          <img src="custom.jpg" alt="Custom Build exempel">
           <h3>Custom Build</h3>
           <p>Skräddarsydd dator helt efter dina behov och önskemål.</p>
         </div>
@@ -73,38 +73,19 @@
     <section id="bestall" class="card">
       <h2>Beställ din dator</h2>
       <p>Fyll i formuläret nedan så återkommer vi med en offert baserat på dina behov.</p>
-      <form action="https://formspree.io/f/mayvlzge" method="POST">
-        <input type="text" name="namn" placeholder="Ditt namn" required>
-        <input type="email" name="email" placeholder="Din e-post" required>
-        <select name="budget" required>
-          <option value="">Välj budget</option>
-          <option value="5000-7000">5000 - 7000 kr</option>
-          <option value="7000-10000">7000 - 10 000 kr</option>
-          <option value="10000+">10 000 kr +</option>
-        </select>
-        <textarea name="behov" rows="4" placeholder="Beskriv vad datorn ska användas till (t.ex. gaming, skolarbete, streaming)"></textarea>
-        <button type="submit">Skicka beställning</button>
+      <!-- Formspree integrated to send to nordicbuilds@hotmail.com -->
+      <form action="https://formspree.io/f/xkgvdjgj" method="POST">
+        <label>
+          Din e-post:
+          <input type="email" name="email" required>
+        </label>
+        <label>
+          Ditt meddelande:
+          <textarea name="message" required></textarea>
+        </label>
+        <button type="submit">Skicka</button>
       </form>
       <p id="thanks">Tack! Vi har mottagit din beställning.</p>
-      <script>
-        const form = document.querySelector('form');
-        const thanks = document.getElementById('thanks');
-        form.addEventListener('submit', e => {
-          e.preventDefault();
-          fetch(form.action, {
-            method: 'POST',
-            body: new FormData(form),
-            headers: { 'Accept': 'application/json' }
-          }).then(response => {
-            if (response.ok) {
-              form.style.display = 'none';
-              thanks.style.display = 'block';
-            } else {
-              alert('Något gick fel, försök igen.');
-            }
-          }).catch(() => alert('Något gick fel, försök igen.'));
-        });
-      </script>
     </section>
 
     <section id="kontakt" class="card">
@@ -135,4 +116,3 @@
   </script>
 </body>
 </html>
-
