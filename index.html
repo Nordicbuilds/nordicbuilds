@@ -5,127 +5,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nordic Builds UF</title>
   <style>
-    html {
-      scroll-behavior: smooth;
-    }
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #0d0d0d;
-      color: #f2f2f2;
-    }
-    header {
-      background: linear-gradient(90deg, #1f1c2c, #928dab);
-      color: white;
-      padding: 2rem 1rem;
-      text-align: center;
-      position: sticky;
-      top: 0;
-      z-index: 10;
-    }
-    nav {
-      margin-top: 1rem;
-    }
-    nav a {
-      color: #f2f2f2;
-      text-decoration: none;
-      margin: 0 1rem;
-      font-weight: bold;
-      transition: color 0.3s;
-      cursor: pointer;
-    }
-    nav a:hover {
-      color: #00d4ff;
-    }
-    .container {
-      width: 90%;
-      max-width: 1100px;
-      margin: 2rem auto;
-    }
-    .card {
-      background: #1a1a1a;
-      border-radius: 16px;
-      padding: 2rem;
-      margin-bottom: 2rem;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.5);
-      transition: transform 0.3s;
-    }
-    .card:hover {
-      transform: translateY(-5px);
-    }
-    .products {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 2rem;
-    }
-    .product-card {
-      background: #262626;
-      border-radius: 12px;
-      padding: 1.5rem;
-      text-align: center;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.4);
-      transition: transform 0.3s, box-shadow 0.3s;
-    }
-    .product-card:hover {
-      transform: translateY(-8px);
-      box-shadow: 0 8px 20px rgba(0,0,0,0.6);
-    }
-    .product-card img {
-      max-width: 100%;
-      border-radius: 8px;
-      margin-bottom: 1rem;
-    }
-    .product-card h3 {
-      color: #00d4ff;
-    }
-    form {
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-      margin-top: 1rem;
-    }
-    input, textarea, select {
-      padding: 0.7rem;
-      border-radius: 8px;
-      border: none;
-      background: #2a2a2a;
-      color: white;
-    }
-    input:focus, textarea:focus, select:focus {
-      outline: 2px solid #00d4ff;
-    }
-    footer {
-      text-align: center;
-      padding: 1.5rem;
-      background: #1f1c2c;
-      color: white;
-      margin-top: 2rem;
-    }
-    button {
-      background: linear-gradient(90deg, #00d4ff, #0077ff);
-      color: white;
-      border: none;
-      padding: 0.7rem 1.5rem;
-      border-radius: 8px;
-      cursor: pointer;
-      font-weight: bold;
-      transition: background 0.3s;
-    }
-    button:hover {
-      background: linear-gradient(90deg, #0077ff, #00d4ff);
-    }
-    @media (max-width: 600px) {
-      nav a {
-        display: block;
-        margin: 0.5rem 0;
-      }
-    }
-    .example-note {
-      font-size: 0.85rem;
-      color: #aaaaaa;
-      margin-top: 0.5rem;
-      text-align: center;
-    }
+    html { scroll-behavior: smooth; }
+    body { margin:0; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background:#0d0d0d; color:#f2f2f2; }
+    header { background:linear-gradient(90deg,#1f1c2c,#928dab); color:white; padding:2rem 1rem; text-align:center; position:sticky; top:0; z-index:10; }
+    nav { margin-top:1rem; }
+    nav a { color:#f2f2f2; text-decoration:none; margin:0 1rem; font-weight:bold; transition:color 0.3s; cursor:pointer; }
+    nav a:hover { color:#00d4ff; }
+    .container { width:90%; max-width:1100px; margin:2rem auto; }
+    .card { background:#1a1a1a; border-radius:16px; padding:2rem; margin-bottom:2rem; box-shadow:0 4px 15px rgba(0,0,0,0.5); transition: transform 0.3s; }
+    .card:hover { transform: translateY(-5px); }
+    .products { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:2rem; }
+    .product-card { background:#262626; border-radius:12px; padding:1.5rem; text-align:center; box-shadow:0 4px 12px rgba(0,0,0,0.4); transition: transform 0.3s, box-shadow 0.3s; }
+    .product-card:hover { transform: translateY(-8px); box-shadow:0 8px 20px rgba(0,0,0,0.6); }
+    .product-card img { max-width:100%; border-radius:8px; margin-bottom:1rem; }
+    .product-card h3 { color:#00d4ff; }
+    form { display:flex; flex-direction:column; gap:1rem; margin-top:1rem; }
+    input, textarea, select { padding:0.7rem; border-radius:8px; border:none; background:#2a2a2a; color:white; }
+    input:focus, textarea:focus, select:focus { outline:2px solid #00d4ff; }
+    button { background:linear-gradient(90deg,#00d4ff,#0077ff); color:white; border:none; padding:0.7rem 1.5rem; border-radius:8px; cursor:pointer; font-weight:bold; transition:background 0.3s; }
+    button:hover { background:linear-gradient(90deg,#0077ff,#00d4ff); }
+    footer { text-align:center; padding:1.5rem; background:#1f1c2c; color:white; margin-top:2rem; }
+    @media (max-width:600px){nav a{display:block;margin:0.5rem 0;}}
+    .example-note { font-size:0.85rem; color:#aaaaaa; margin-top:0.5rem; text-align:center; }
+    #thanks { color:#00d4ff; text-align:center; display:none; margin-top:1rem; font-weight:bold; }
   </style>
 </head>
 <body>
@@ -151,17 +53,17 @@
       <p class="example-note">Bilderna är exempel. Varje dator byggs efter dina behov och budget.</p>
       <div class="products">
         <div class="product-card">
-          <img src="images/budget.jpg" alt="Budgetdator exempel">
+          <img src="budget.jpg" alt="Budgetdator exempel">
           <h3>Budget Gaming</h3>
           <p>Perfekt för nybörjaren. Prisvärd dator med stabil prestanda.</p>
         </div>
         <div class="product-card">
-          <img src="images/pro.jpg" alt="Gaming Pro exempel">
+          <img src="pro.jpg" alt="Gaming Pro exempel">
           <h3>Gaming Pro</h3>
           <p>För den som vill spela de senaste spelen med bra flyt.</p>
         </div>
         <div class="product-card">
-          <img src="images/custom.jpg" alt="Custom Build exempel">
+          <img src="custom.jpg" alt="Custom Build exempel">
           <h3>Custom Build</h3>
           <p>Skräddarsydd dator helt efter dina behov och önskemål.</p>
         </div>
@@ -183,13 +85,33 @@
         <textarea name="behov" rows="4" placeholder="Beskriv vad datorn ska användas till (t.ex. gaming, skolarbete, streaming)"></textarea>
         <button type="submit">Skicka beställning</button>
       </form>
+      <p id="thanks">Tack! Vi har mottagit din beställning.</p>
+      <script>
+        const form = document.querySelector('form');
+        const thanks = document.getElementById('thanks');
+        form.addEventListener('submit', e => {
+          e.preventDefault();
+          fetch(form.action, {
+            method: 'POST',
+            body: new FormData(form),
+            headers: { 'Accept': 'application/json' }
+          }).then(response => {
+            if (response.ok) {
+              form.style.display = 'none';
+              thanks.style.display = 'block';
+            } else {
+              alert('Något gick fel, försök igen.');
+            }
+          }).catch(() => alert('Något gick fel, försök igen.'));
+        });
+      </script>
     </section>
 
     <section id="kontakt" class="card">
       <h2>Kontakt</h2>
       <p>Vill du veta mer eller beställa en dator? Kontakta oss!</p>
       <p>Email: <a href="mailto:nordicbuilds@hotmail.com" style="color:#00d4ff;">nordicbuilds@hotmail.com</a></p>
-      </section>
+    </section>
   </div>
 
   <footer>
