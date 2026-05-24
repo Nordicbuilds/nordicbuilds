@@ -840,20 +840,20 @@
         <div class="form-row">
           <div class="field">
             <label for="fname">Förnamn</label>
-            <input type="text" id="fname" placeholder="Anna" required>
+            <input type="text" id="fname" name="förnamn" placeholder="Anna" required>
           </div>
           <div class="field">
             <label for="lname">Efternamn</label>
-            <input type="text" id="lname" placeholder="Svensson" required>
+            <input type="text" id="lname" name="efternamn" placeholder="Svensson" required>
           </div>
         </div>
         <div class="field">
           <label for="email">E-postadress</label>
-          <input type="email" id="email" placeholder="anna@example.com" required>
+          <input type="email" id="email" name="email" placeholder="anna@example.com" required>
         </div>
         <div class="field">
           <label for="phone">Telefonnummer</label>
-          <input type="tel" id="phone" placeholder="070 000 00 00" required>
+          <input type="tel" id="phone" name="telefon" placeholder="070 000 00 00" required>
         </div>
         <div class="field">
           <label for="budget">Budget (kr)</label>
@@ -867,7 +867,7 @@
         </div>
         <div class="field">
           <label for="usage">Primär användning</label>
-          <select id="usage" required>
+          <select id="usage" name="användning" required>
             <option value="" disabled selected>Välj användningsområde</option>
             <option value="gaming">Gaming</option>
             <option value="gaming-streaming">Gaming + Streaming</option>
@@ -878,7 +878,7 @@
         </div>
         <div class="field">
           <label for="wishes">Önskemål & kommentarer</label>
-          <textarea id="wishes" placeholder="Berätta gärna mer! Specifika spel du vill köra, önskemål om design (RGB, case-färg), operativsystem, skärm etc..."></textarea>
+          <textarea id="wishes" name="önskemål" placeholder="Berätta gärna mer! Specifika spel du vill köra, önskemål om design (RGB, case-färg), operativsystem, skärm etc..."></textarea>
         </div>
         <p class="form-note">Vi svarar på din e-post inom 48 timmar med ett skräddarsytt förslag.</p>
         <button type="submit" class="form-submit">Skicka beställning →</button>
@@ -1034,16 +1034,33 @@
     });
   });
 
-  // Form submit
-  document.getElementById('orderForm').addEventListener('submit', function(e) {
+  // Form submit – Formspree
+  document.getElementById('orderForm').addEventListener('submit', async function(e) {
     e.preventDefault();
     const btn = this.querySelector('.form-submit');
     btn.textContent = 'Skickar...';
     btn.disabled = true;
-    setTimeout(() => {
-      this.style.display = 'none';
-      document.getElementById('formSuccess').classList.add('show');
-    }, 1200);
+
+    const data = new FormData(this);
+
+    try {
+      const res = await fetch('https://formspree.io/f/xkgvdjgj', {
+        method: 'POST',
+        body: data,
+        headers: { 'Accept': 'application/json' }
+      });
+
+      if (res.ok) {
+        this.style.display = 'none';
+        document.getElementById('formSuccess').classList.add('show');
+      } else {
+        btn.textContent = 'Något gick fel – försök igen';
+        btn.disabled = false;
+      }
+    } catch (err) {
+      btn.textContent = 'Något gick fel – försök igen';
+      btn.disabled = false;
+    }
   });
 
   // Counter animation
