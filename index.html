@@ -1,194 +1,1061 @@
 <!DOCTYPE html>
 <html lang="sv">
 <head>
-  <link rel="icon" type="image/png" href="logo.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="logo32.png">
-<link rel="icon" type="image/png" sizes="64x64" href="logo64.png">
-<link rel="icon" type="image/png" sizes="512x512" href="logo512.png">
-  <title>Nordic Builds UF – Budget Custom Gamingdatorer</title>
-<meta name="description" content="Vi bygger prisvärda gamingdatorer och skräddarsydda PC för alla behov. Perfekt för spel, skola och arbete.">
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nordic Builds UF</title>
-  <link rel="canonical" href="https://nordicbuilds.se">
-  <style>
-    header {
-  transition: transform 0.3s ease;
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Primary SEO -->
+<title>Nordic Builds – Skräddarsydda Gamingdatorer | Bygg Din PC</title>
+<meta name="description" content="Nordic Builds bygger prisvärda, skräddarsydda gamingdatorer på beställning. Windows ingår. Offert inom 48 timmar. Budget från 3 000 kr – välj komponenter själv eller låt oss rekommendera.">
+<meta name="keywords" content="gamingdator, custom PC, bygga dator, skräddarsydd dator, gaming PC Sverige, köpa gamingdator, beställa dator, billig gamingdator, Nordic Builds">
+<meta name="robots" content="index, follow">
+<meta name="author" content="Nordic Builds">
+<link rel="canonical" href="https://nordicbuilds.se/">
+
+<!-- Open Graph (Facebook, LinkedIn) -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://nordicbuilds.se/">
+<meta property="og:title" content="Nordic Builds – Skräddarsydda Gamingdatorer">
+<meta property="og:description" content="Vi bygger prisvärda gamingdatorer på beställning – anpassade exakt efter dina behov och budget. Windows ingår. Offert inom 48 timmar.">
+<meta property="og:image" content="https://nordicbuilds.se/og-image.jpg">
+<meta property="og:locale" content="sv_SE">
+<meta property="og:site_name" content="Nordic Builds">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:url" content="https://nordicbuilds.se/">
+<meta name="twitter:title" content="Nordic Builds – Skräddarsydda Gamingdatorer">
+<meta name="twitter:description" content="Vi bygger prisvärda gamingdatorer på beställning – anpassade exakt efter dina behov och budget. Windows ingår. Offert inom 48 timmar.">
+<meta name="twitter:image" content="https://nordicbuilds.se/og-image.jpg">
+
+<!-- Structured Data – LocalBusiness -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Nordic Builds",
+  "description": "Nordic Builds bygger skräddarsydda gamingdatorer och PC-datorer på beställning. Windows ingår i priset. Offert inom 48 timmar.",
+  "url": "https://nordicbuilds.se",
+  "email": "nordicbuilds@hotmail.com",
+  "areaServed": "SE",
+  "currenciesAccepted": "SEK",
+  "priceRange": "3000-100000 SEK",
+  "serviceType": "Custom PC Building",
+  "sameAs": []
 }
-header.hide {
-  transform: translateY(-100%);
+</script>
+
+<!-- Structured Data – FAQPage -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Ingår operativsystem i priset?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Ja, Windows ingår alltid i priset utan extra kostnad. Vi installerar och aktiverar det åt dig." }
+    },
+    {
+      "@type": "Question",
+      "name": "Hur sker leveransen av gamingdatorn?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Vi erbjuder upphämtning eller fraktar datorn tryggt emballerad. Vi diskuterar det som passar dig bäst." }
+    },
+    {
+      "@type": "Question",
+      "name": "Kan jag välja specifika komponenter?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Absolut. Du kan specificera exakt vilka komponenter du vill ha, eller låta oss rekommendera det bästa för din budget." }
+    },
+    {
+      "@type": "Question",
+      "name": "Har ni garanti på datorerna?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Komponenterna har tillverkargaranti och vi finns tillgängliga för support och hjälp efter leverans." }
+    },
+    {
+      "@type": "Question",
+      "name": "Hur lång tid tar det att bygga en gamingdator?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Efter att vi kommit överens om offerten tar bygget vanligtvis 1–2 veckor beroende på komponenttillgång." }
+    },
+    {
+      "@type": "Question",
+      "name": "Hur fungerar betalningen?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Betalning sker innan vi påbörjar bygget. Alla datorer byggs på beställning och vi börjar aldrig bygga utan att affären är bekräftad." }
+    }
+  ]
 }
-    html { scroll-behavior: smooth; }
-    body { margin:0; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background:#0d0d0d; color:#f2f2f2; }
-    header { background:linear-gradient(90deg,#1f1c2c,#928dab); color:white; padding:2rem 1rem; text-align:center; position:sticky; top:0; z-index:10; }
-    nav { margin-top:1rem; }
-    nav a { color:#f2f2f2; text-decoration:none; margin:0 1rem; font-weight:bold; transition:color 0.3s; cursor:pointer; }
-    nav a:hover { color:#00d4ff; }
-    .container { width:90%; max-width:1100px; margin:2rem auto; }
-    .card { background:#1a1a1a; border-radius:16px; padding:2rem; margin-bottom:2rem; box-shadow:0 4px 15px rgba(0,0,0,0.5); transition: transform 0.3s; }
-    .card:hover { transform: translateY(-5px); }
-    .products { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:2rem; }
-    .product-card { background:#262626; border-radius:12px; padding:1.5rem; text-align:center; box-shadow:0 4px 12px rgba(0,0,0,0.4); transition: transform 0.3s, box-shadow 0.3s; }
-    .product-card:hover { transform: translateY(-8px); box-shadow:0 8px 20px rgba(0,0,0,0.6); }
-    .product-card img { max-width:100%; border-radius:8px; margin-bottom:1rem; }
-    .product-card h3 { color:#00d4ff; }
-    form { display:flex; flex-direction:column; gap:1rem; margin-top:1rem; }
-    input, textarea, select { padding:0.7rem; border-radius:8px; border:none; background:#2a2a2a; color:white; }
-    input:focus, textarea:focus, select:focus { outline:2px solid #00d4ff; }
-    button { background:linear-gradient(90deg,#00d4ff,#0077ff); color:white; border:none; padding:0.7rem 1.5rem; border-radius:8px; cursor:pointer; font-weight:bold; transition:background 0.3s; }
-    button:hover { background:linear-gradient(90deg,#0077ff,#00d4ff); }
-    footer { text-align:center; padding:1.5rem; background:#1f1c2c; color:white; margin-top:2rem; }
-    @media (max-width:600px){nav a{display:block;margin:0.5rem 0;}}
-    .example-note { font-size:0.85rem; color:#aaaaaa; margin-top:0.5rem; text-align:center; }
-    #thanks { color:#00d4ff; text-align:center; display:none; margin-top:1rem; font-weight:bold; }
-     footer .copyright {font-size: 12px; margin-top: 3rem; }
-    footer p { max-width: 900px; margin: 0 auto; margin-bottom: 1rem; }
-  </style>
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;600&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --black: #050508;
+    --deep: #0a0a10;
+    --card: #0f0f18;
+    --border: rgba(255,255,255,0.07);
+    --ice: #c8eeff;
+    --blue: #3b82f6;
+    --cyan: #06b6d4;
+    --glow: #0ea5e9;
+    --white: #f0f4ff;
+    --muted: rgba(200,210,255,0.45);
+    --accent: #60a5fa;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--black);
+    color: var(--white);
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 300;
+    overflow-x: hidden;
+    cursor: none;
+  }
+
+  /* Custom cursor */
+  .cursor {
+    width: 8px; height: 8px;
+    background: var(--white);
+    border-radius: 50%;
+    position: fixed; top: 0; left: 0;
+    pointer-events: none;
+    z-index: 9999;
+    transform: translate(-50%, -50%);
+    mix-blend-mode: difference;
+  }
+  .cursor-ring {
+    width: 28px; height: 28px;
+    border: 1.5px solid rgba(255,255,255,0.6);
+    border-radius: 50%;
+    position: fixed; top: 0; left: 0;
+    pointer-events: none;
+    z-index: 9998;
+    transform: translate(-50%, -50%);
+    transition: width 0.15s ease, height 0.15s ease, border-color 0.15s ease;
+  }
+  .cursor-ring.hovering {
+    width: 44px; height: 44px;
+    border-color: var(--cyan);
+  }
+  body:hover .cursor { opacity: 1; }
+
+  /* NOISE OVERLAY */
+  body::before {
+    content: '';
+    position: fixed; inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+    pointer-events: none; z-index: 1000; opacity: 0.6;
+  }
+
+  /* NAV */
+  nav {
+    position: fixed; top: 0; left: 0; right: 0;
+    z-index: 500;
+    padding: 0 5vw;
+    display: flex; align-items: center; justify-content: space-between;
+    height: 72px;
+    background: rgba(5,5,8,0.85);
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid var(--border);
+    transition: all 0.3s ease;
+  }
+  nav.scrolled { height: 60px; background: rgba(5,5,8,0.95); }
+  .nav-logo {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.6rem;
+    letter-spacing: 0.1em;
+    color: var(--white);
+    text-decoration: none;
+    display: flex; align-items: center; gap: 10px;
+  }
+  .nav-logo-icon {
+    width: 36px; height: 36px;
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0;
+  }
+  .nav-logo-icon img {
+    width: 36px; height: 36px;
+    object-fit: contain;
+    border-radius: 6px;
+  }
+  .nav-links { display: flex; gap: 2.5rem; list-style: none; }
+  .nav-links a {
+    color: var(--muted);
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    transition: color 0.2s ease;
+  }
+  .nav-links a:hover { color: var(--white); }
+  .nav-cta {
+    background: linear-gradient(135deg, var(--blue), var(--cyan));
+    color: #000 !important;
+    padding: 8px 20px;
+    border-radius: 4px;
+    font-weight: 600 !important;
+    transition: opacity 0.2s ease !important;
+  }
+  .nav-cta:hover { opacity: 0.85; color: #000 !important; }
+
+  /* HAMBURGER */
+  .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 8px; }
+  .hamburger span { width: 24px; height: 1.5px; background: var(--white); transition: all 0.3s ease; display: block; }
+  .mobile-menu {
+    display: none;
+    position: fixed; top: 72px; left: 0; right: 0;
+    background: rgba(5,5,8,0.98);
+    padding: 2rem 5vw;
+    flex-direction: column; gap: 1.5rem;
+    border-bottom: 1px solid var(--border);
+    z-index: 499;
+  }
+  .mobile-menu a { color: var(--muted); text-decoration: none; font-size: 1.1rem; font-weight: 500; }
+  .mobile-menu.open { display: flex; }
+
+  /* HERO */
+  .hero {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    padding: 120px 5vw 80px;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero-bg {
+    position: absolute; inset: 0;
+    background:
+      radial-gradient(ellipse 60% 50% at 80% 50%, rgba(59,130,246,0.12) 0%, transparent 70%),
+      radial-gradient(ellipse 50% 60% at 20% 80%, rgba(6,182,212,0.08) 0%, transparent 60%),
+      linear-gradient(180deg, var(--black) 0%, var(--deep) 100%);
+  }
+  .hero-grid {
+    position: absolute; inset: 0;
+    background-image:
+      linear-gradient(rgba(59,130,246,0.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(59,130,246,0.04) 1px, transparent 1px);
+    background-size: 60px 60px;
+    mask-image: radial-gradient(ellipse 80% 80% at 50% 50%, black 30%, transparent 80%);
+  }
+  .hero-content { position: relative; text-align: center; max-width: 900px; }
+  .hero-badge {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: rgba(59,130,246,0.1);
+    border: 1px solid rgba(59,130,246,0.3);
+    padding: 6px 16px; border-radius: 100px;
+    font-size: 0.75rem; font-weight: 500; letter-spacing: 0.15em;
+    text-transform: uppercase; color: var(--accent);
+    margin-bottom: 2rem;
+    animation: fadeUp 0.8s ease both;
+  }
+  .hero-badge-dot { width: 6px; height: 6px; background: var(--cyan); border-radius: 50%; animation: pulse 2s infinite; }
+  @keyframes pulse { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:0.5;transform:scale(0.8)} }
+
+  h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: clamp(3.5rem, 10vw, 9rem);
+    line-height: 0.92;
+    letter-spacing: 0.02em;
+    margin-bottom: 1.5rem;
+    animation: fadeUp 0.8s 0.15s ease both;
+  }
+  .h1-line1 { display: block; color: var(--white); }
+  .h1-line2 {
+    display: block;
+    background: linear-gradient(90deg, var(--blue), var(--cyan), var(--ice));
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+  }
+  .hero-sub {
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    color: var(--muted);
+    max-width: 520px; margin: 0 auto 3rem;
+    line-height: 1.7;
+    animation: fadeUp 0.8s 0.3s ease both;
+  }
+  .hero-buttons {
+    display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;
+    animation: fadeUp 0.8s 0.45s ease both;
+  }
+  .btn-primary {
+    background: linear-gradient(135deg, var(--blue), var(--cyan));
+    color: #000; padding: 14px 32px; border-radius: 6px;
+    font-weight: 600; font-size: 0.95rem; text-decoration: none;
+    letter-spacing: 0.03em; border: none; cursor: pointer;
+    transition: all 0.25s ease;
+    display: inline-flex; align-items: center; gap: 8px;
+  }
+  .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 12px 40px rgba(59,130,246,0.4); }
+  .btn-secondary {
+    background: transparent;
+    color: var(--white); padding: 13px 32px; border-radius: 6px;
+    font-weight: 500; font-size: 0.95rem; text-decoration: none;
+    letter-spacing: 0.03em; border: 1px solid var(--border);
+    transition: all 0.25s ease;
+    display: inline-flex; align-items: center; gap: 8px;
+  }
+  .btn-secondary:hover { border-color: rgba(255,255,255,0.3); background: rgba(255,255,255,0.05); }
+
+  .hero-stats {
+    display: flex; gap: 3rem; justify-content: center; flex-wrap: wrap;
+    margin-top: 5rem;
+    animation: fadeUp 0.8s 0.6s ease both;
+    padding-top: 3rem;
+    border-top: 1px solid var(--border);
+  }
+  .stat { text-align: center; }
+  .stat-num {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2.8rem; line-height: 1;
+    background: linear-gradient(135deg, var(--white), var(--accent));
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+  }
+  .stat-label { font-size: 0.75rem; color: var(--muted); letter-spacing: 0.1em; text-transform: uppercase; margin-top: 4px; }
+
+  @keyframes fadeUp { from{opacity:0;transform:translateY(30px)} to{opacity:1;transform:translateY(0)} }
+
+  /* SECTION COMMONS */
+  section { padding: 120px 5vw; }
+  .section-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.7rem; letter-spacing: 0.3em;
+    text-transform: uppercase; color: var(--cyan);
+    margin-bottom: 1rem;
+  }
+  .section-title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: clamp(2.5rem, 5vw, 4.5rem);
+    line-height: 1;
+    letter-spacing: 0.03em;
+    margin-bottom: 1.5rem;
+  }
+  .section-sub { color: var(--muted); font-size: 1.05rem; line-height: 1.7; max-width: 500px; }
+
+  /* PRODUCTS */
+  .products { background: var(--deep); }
+  .products-header { display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 2rem; margin-bottom: 4rem; }
+  .products-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5px; }
+
+  .product-card {
+    background: var(--card);
+    padding: 2.5rem;
+    position: relative; overflow: hidden;
+    transition: all 0.3s ease;
+    border: 1px solid var(--border);
+  }
+  .product-card::before {
+    content: '';
+    position: absolute; top: 0; left: 0; right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--blue), var(--cyan), transparent);
+    transform: scaleX(0); transition: transform 0.4s ease;
+  }
+  .product-card:hover::before { transform: scaleX(1); }
+  .product-card:hover { background: #12121e; transform: translateY(-4px); }
+
+  .product-tier {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.65rem; letter-spacing: 0.25em;
+    text-transform: uppercase; color: var(--cyan);
+    margin-bottom: 0.75rem;
+  }
+  .product-name {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2.2rem; letter-spacing: 0.05em;
+    margin-bottom: 1rem;
+  }
+  .product-desc { color: var(--muted); font-size: 0.9rem; line-height: 1.7; margin-bottom: 2rem; }
+  .product-price {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.6rem; letter-spacing: 0.05em;
+    color: var(--accent); margin-bottom: 2rem;
+  }
+  .product-price span { font-family: 'DM Sans', sans-serif; font-size: 0.8rem; color: var(--muted); }
+  .product-specs { list-style: none; margin-bottom: 2.5rem; }
+  .product-specs li {
+    display: flex; align-items: center; gap: 10px;
+    font-size: 0.85rem; color: var(--muted);
+    padding: 8px 0; border-bottom: 1px solid rgba(255,255,255,0.04);
+  }
+  .product-specs li::before { content: '—'; color: var(--cyan); font-size: 0.7rem; }
+  .product-badge {
+    position: absolute; top: 1.5rem; right: 1.5rem;
+    background: linear-gradient(135deg, var(--blue), var(--cyan));
+    color: #000; padding: 4px 12px; border-radius: 100px;
+    font-size: 0.65rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase;
+  }
+  .product-icon {
+    width: 48px; height: 48px; margin-bottom: 1.5rem;
+    background: rgba(59,130,246,0.1);
+    border: 1px solid rgba(59,130,246,0.2);
+    border-radius: 8px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1.4rem;
+  }
+
+  /* HOW IT WORKS */
+  .how { background: var(--black); }
+  .how-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 6rem; align-items: center; }
+  .how-steps { display: flex; flex-direction: column; gap: 2rem; margin-top: 3rem; }
+  .how-step {
+    display: flex; gap: 1.5rem; align-items: flex-start;
+    padding: 1.5rem;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    transition: border-color 0.3s ease, background 0.3s ease;
+    cursor: default;
+  }
+  .how-step:hover { border-color: rgba(59,130,246,0.3); background: rgba(59,130,246,0.04); }
+  .step-num {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2.5rem; line-height: 1;
+    background: linear-gradient(135deg, var(--blue), var(--cyan));
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+    flex-shrink: 0; width: 40px;
+  }
+  .step-title { font-weight: 600; font-size: 1rem; margin-bottom: 0.4rem; }
+  .step-desc { color: var(--muted); font-size: 0.875rem; line-height: 1.6; }
+  .how-visual {
+    position: relative;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 3rem;
+    display: flex; align-items: center; justify-content: center; flex-direction: column;
+    gap: 2rem;
+    overflow: hidden;
+    min-height: 480px;
+  }
+  .how-visual::before {
+    content: '';
+    position: absolute; inset: 0;
+    background: radial-gradient(ellipse 80% 60% at 50% 30%, rgba(59,130,246,0.1) 0%, transparent 70%);
+  }
+  .visual-pc {
+    font-size: 8rem; opacity: 0.15;
+    position: absolute; bottom: 2rem; right: 2rem;
+    filter: blur(1px);
+  }
+  .how-visual-list { position: relative; width: 100%; }
+  .how-visual-item {
+    display: flex; align-items: center; gap: 1rem;
+    padding: 1rem 1.5rem;
+    background: rgba(255,255,255,0.03);
+    border-radius: 8px; margin-bottom: 1rem;
+    border: 1px solid rgba(255,255,255,0.06);
+  }
+  .how-visual-item-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
+  .dot-green { background: #22c55e; box-shadow: 0 0 8px #22c55e; }
+  .dot-yellow { background: #eab308; box-shadow: 0 0 8px #eab308; }
+  .dot-blue { background: var(--blue); box-shadow: 0 0 8px var(--blue); }
+  .how-visual-item-text { font-size: 0.85rem; color: var(--muted); }
+  .how-visual-item-val { margin-left: auto; font-family: 'JetBrains Mono', monospace; font-size: 0.8rem; color: var(--white); }
+
+  /* TESTIMONIALS / WHY */
+  .why { background: var(--deep); }
+  .why-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.5rem; margin-top: 4rem; }
+  .why-card {
+    padding: 2rem; border: 1px solid var(--border);
+    border-radius: 10px; background: var(--card);
+    transition: border-color 0.3s, transform 0.3s;
+  }
+  .why-card:hover { border-color: rgba(59,130,246,0.3); transform: translateY(-3px); }
+  .why-icon { font-size: 1.8rem; margin-bottom: 1rem; }
+  .why-title { font-weight: 600; font-size: 1rem; margin-bottom: 0.5rem; }
+  .why-text { color: var(--muted); font-size: 0.875rem; line-height: 1.65; }
+
+  /* FORM / ORDER */
+  .order { background: var(--black); }
+  .order-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 6rem; align-items: start; }
+  .order-info { }
+  .order-features { display: flex; flex-direction: column; gap: 1.2rem; margin-top: 3rem; }
+  .order-feature { display: flex; align-items: center; gap: 1rem; color: var(--muted); font-size: 0.875rem; }
+  .order-feature-icon { font-size: 1.1rem; flex-shrink: 0; }
+
+  form { display: flex; flex-direction: column; gap: 1.2rem; }
+  .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+  .field { display: flex; flex-direction: column; gap: 6px; }
+  label { font-size: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); font-weight: 500; }
+  input, select, textarea {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 12px 16px;
+    color: var(--white);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.9rem;
+    outline: none;
+    transition: border-color 0.25s ease, box-shadow 0.25s ease;
+    width: 100%;
+    appearance: none;
+  }
+  input:focus, select:focus, textarea:focus {
+    border-color: var(--blue);
+    box-shadow: 0 0 0 3px rgba(59,130,246,0.15);
+  }
+  select option { background: var(--deep); }
+  textarea { resize: vertical; min-height: 100px; }
+  .form-note { font-size: 0.75rem; color: var(--muted); margin-top: -0.5rem; }
+  .budget-options { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.75rem; }
+  .budget-option { display: none; }
+  .budget-label {
+    padding: 12px 8px; border: 1px solid var(--border);
+    border-radius: 6px; text-align: center;
+    font-size: 0.8rem; font-weight: 500; cursor: pointer;
+    transition: all 0.2s ease; color: var(--muted);
+    display: flex; flex-direction: column; gap: 3px;
+  }
+  .budget-option:checked + .budget-label {
+    border-color: var(--blue);
+    background: rgba(59,130,246,0.1);
+    color: var(--white);
+    box-shadow: 0 0 0 2px rgba(59,130,246,0.2);
+  }
+  .budget-amount { font-family: 'Bebas Neue', sans-serif; font-size: 1.1rem; letter-spacing: 0.05em; }
+  .form-submit {
+    background: linear-gradient(135deg, var(--blue), var(--cyan));
+    color: #000; border: none; padding: 16px 32px; border-radius: 6px;
+    font-family: 'DM Sans', sans-serif; font-weight: 700; font-size: 1rem;
+    cursor: pointer; transition: all 0.25s ease; width: 100%;
+    letter-spacing: 0.03em;
+  }
+  .form-submit:hover { transform: translateY(-2px); box-shadow: 0 12px 40px rgba(59,130,246,0.4); }
+  .form-success {
+    display: none;
+    text-align: center; padding: 3rem 2rem;
+    border: 1px solid rgba(34,197,94,0.3);
+    border-radius: 10px; background: rgba(34,197,94,0.05);
+  }
+  .form-success.show { display: block; }
+  .form-success-icon { font-size: 3rem; margin-bottom: 1rem; }
+  .form-success h3 { font-family: 'Bebas Neue', sans-serif; font-size: 2rem; margin-bottom: 0.5rem; color: #22c55e; }
+  .form-success p { color: var(--muted); font-size: 0.9rem; }
+
+  /* FAQ */
+  .faq { background: var(--deep); }
+  .faq-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 4rem; }
+  .faq-item {
+    border: 1px solid var(--border); border-radius: 8px;
+    overflow: hidden; transition: border-color 0.3s;
+  }
+  .faq-item.open { border-color: rgba(59,130,246,0.3); }
+  .faq-q {
+    padding: 1.25rem 1.5rem;
+    display: flex; align-items: center; justify-content: space-between;
+    cursor: pointer; font-weight: 500; font-size: 0.9rem;
+    gap: 1rem;
+    user-select: none;
+  }
+  .faq-icon { font-size: 1.2rem; color: var(--cyan); flex-shrink: 0; transition: transform 0.3s; }
+  .faq-item.open .faq-icon { transform: rotate(45deg); }
+  .faq-a {
+    max-height: 0; overflow: hidden;
+    transition: max-height 0.35s ease, padding 0.35s ease;
+    color: var(--muted); font-size: 0.875rem; line-height: 1.7;
+    padding: 0 1.5rem;
+  }
+  .faq-item.open .faq-a { max-height: 200px; padding: 0 1.5rem 1.25rem; }
+
+  /* CONTACT */
+  .contact { background: var(--black); }
+  .contact-inner {
+    max-width: 700px; margin: 0 auto; text-align: center;
+  }
+  .contact-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 16px; padding: 4rem 3rem;
+    margin-top: 3rem; position: relative; overflow: hidden;
+  }
+  .contact-card::before {
+    content: '';
+    position: absolute; top: -50%; left: -50%;
+    width: 200%; height: 200%;
+    background: radial-gradient(ellipse 40% 40% at 50% 0%, rgba(59,130,246,0.15), transparent 70%);
+  }
+  .contact-email {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2rem; letter-spacing: 0.05em;
+    color: var(--accent); text-decoration: none;
+    transition: color 0.2s;
+  }
+  .contact-email:hover { color: var(--cyan); }
+  .contact-or { color: var(--muted); margin: 1.5rem 0; font-size: 0.85rem; }
+
+  /* FOOTER */
+  footer {
+    background: var(--deep);
+    border-top: 1px solid var(--border);
+    padding: 3rem 5vw 2rem;
+  }
+  .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 4rem; margin-bottom: 3rem; }
+  .footer-brand { }
+  .footer-logo { font-family: 'Bebas Neue', sans-serif; font-size: 1.4rem; letter-spacing: 0.1em; margin-bottom: 1rem; }
+  .footer-tagline { color: var(--muted); font-size: 0.875rem; line-height: 1.6; max-width: 260px; }
+  .footer-col h4 { font-size: 0.75rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--muted); margin-bottom: 1.2rem; }
+  .footer-col a {
+    display: block; color: rgba(200,210,255,0.6); font-size: 0.875rem;
+    text-decoration: none; margin-bottom: 0.7rem; transition: color 0.2s;
+  }
+  .footer-col a:hover { color: var(--white); }
+  .footer-bottom {
+    display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;
+    padding-top: 2rem; border-top: 1px solid var(--border);
+  }
+  .footer-copy { color: var(--muted); font-size: 0.75rem; }
+  .footer-mono { font-family: 'JetBrains Mono', monospace; font-size: 0.7rem; color: rgba(6,182,212,0.5); }
+
+  /* SCROLL ANIMATIONS */
+  .reveal {
+    opacity: 0; transform: translateY(40px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+  }
+  .reveal.visible { opacity: 1; transform: none; }
+  .reveal-delay-1 { transition-delay: 0.1s; }
+  .reveal-delay-2 { transition-delay: 0.2s; }
+  .reveal-delay-3 { transition-delay: 0.3s; }
+
+  /* SCROLLBAR */
+  ::-webkit-scrollbar { width: 4px; }
+  ::-webkit-scrollbar-track { background: var(--black); }
+  ::-webkit-scrollbar-thumb { background: rgba(59,130,246,0.4); border-radius: 2px; }
+
+  /* RESPONSIVE */
+  @media (max-width: 900px) {
+    .nav-links { display: none; }
+    .hamburger { display: flex; }
+    .how-grid, .order-grid { grid-template-columns: 1fr; gap: 3rem; }
+    .faq-grid { grid-template-columns: 1fr; }
+    .footer-grid { grid-template-columns: 1fr 1fr; gap: 2.5rem; }
+    .form-row { grid-template-columns: 1fr; }
+    .hero-stats { gap: 2rem; }
+    body { cursor: auto; }
+    .cursor, .cursor-ring { display: none; }
+  }
+  @media (max-width: 600px) {
+    .footer-grid { grid-template-columns: 1fr; }
+    .budget-options { grid-template-columns: 1fr; }
+    .products-header { flex-direction: column; align-items: flex-start; }
+    .order-grid { gap: 3rem; }
+    .contact-card { padding: 2.5rem 1.5rem; }
+    .contact-email { font-size: 1.5rem; word-break: break-all; }
+  }
+</style>
 </head>
 <body>
-  <header>
-    <h1>Nordic Builds UF</h1>
-    <p>Prisvärda custom datorer för alla behov</p>
-    <nav>
-      <a href="#om-oss" class="scroll-link">Om oss</a>
-      <a href="#produkter" class="scroll-link">Produkter</a>
-      <a href="#bestall" class="scroll-link">Beställ</a>
-      <a href="#kontakt" class="scroll-link">Kontakt</a>
-    </nav>
-  </header>
-    <section id="produkter" class="card">
-      <h2>Exempel på produkter</h2>
-      <p class="example-note">Bilderna är exempel. Varje dator byggs efter dina behov och budget.</p>
-      <div class="products">
-        <div class="product-card">
-          <img src="images/budget.jpg" alt="Budgetdator exempel" fetchpriority="high">
-          <h3>Budget Gaming</h3>
-          <p>Perfekt för nybörjaren. Prisvärd dator med stabil prestanda.</p>
+
+<!-- Hidden SEO content for crawlers -->
+<div style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap" aria-hidden="true">
+  Nordic Builds erbjuder skräddarsydda gamingdatorer och custom PC-byggen i Sverige. Vi specialiserar oss på att bygga prisvärda gaming-datorer med de bästa komponenterna för varje budget. Oavsett om du söker en budget gaming PC, en mellanklassdator eller en high-end gaming rig, hjälper vi dig. Vi bygger datorer för gaming, streaming, video-redigering och skolarbete. Beställ din skräddarsydda dator idag – Windows ingår alltid i priset.
+</div>
+
+<!-- Cursor -->
+<div class="cursor" id="cursor" aria-hidden="true"></div>
+<div class="cursor-ring" id="cursorRing" aria-hidden="true"></div>
+
+<!-- NAV -->
+<nav id="navbar" aria-label="Huvudnavigation">
+  <a href="#" class="nav-logo">
+    <div class="nav-logo-icon"><img src="data:image/png;base64,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" alt="Nordic Builds logotyp" width="36" height="36"></div>
+    Nordic Builds
+  <ul class="nav-links">
+    <li><a href="#hur">Hur det fungerar</a></li>
+    <li><a href="#om-oss">Om oss</a></li>
+    <li><a href="#kontakt">Kontakt</a></li>
+    <li><a href="#bestall" class="nav-cta">Beställ nu</a></li>
+  </ul>
+  <div class="hamburger" id="hamburger">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#hur" onclick="closeMenu()">Hur det fungerar</a>
+  <a href="#om-oss" onclick="closeMenu()">Om oss</a>
+  <a href="#kontakt" onclick="closeMenu()">Kontakt</a>
+  <a href="#bestall" onclick="closeMenu()" style="color:var(--accent);font-weight:600">Beställ nu →</a>
+</div>
+
+<!-- HERO -->
+<section class="hero" id="hem">
+  <div class="hero-bg"></div>
+  <div class="hero-grid"></div>
+  <div class="hero-content">
+    <div class="hero-badge"><span class="hero-badge-dot"></span>Skräddarsydda Gamingdatorer</div>
+    <h1><span class="h1-line1">Din Dator.</span><span class="h1-line2">Ditt Sätt.</span></h1>
+    <p class="hero-sub">Vi bygger skräddarsydda gamingdatorer och PC:ar anpassade exakt efter dina behov och budget. Windows ingår. Ingen onödig kostnad – bara ren prestanda.</p>
+    <div class="hero-buttons">
+      <a href="#bestall" class="btn-primary">Beställ din dator →</a>
+      <a href="#produkter" class="btn-secondary">Se exempel</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat"><div class="stat-num">100%</div><div class="stat-label">Nöjda kunder</div></div>
+      <div class="stat"><div class="stat-num">48H</div><div class="stat-label">Svarstid offert</div></div>
+      <div class="stat"><div class="stat-num">3</div><div class="stat-label">Nivåer</div></div>
+      <div class="stat"><div class="stat-num">∞</div><div class="stat-label">Anpassningar</div></div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- HOW IT WORKS -->
+<section class="how" id="hur" aria-label="Hur det fungerar – beställningsprocess">
+  <div class="how-grid">
+    <div>
+      <p class="section-label reveal">// Process</p>
+      <h2 class="section-title reveal reveal-delay-1">Hur det<br>fungerar</h2>
+      <p class="section-sub reveal reveal-delay-2">Enkelt, transparent och anpassat just för dig. Från din beställning till en dator i din hand.</p>
+      <div class="how-steps">
+        <div class="how-step reveal">
+          <div class="step-num">01</div>
+          <div>
+            <div class="step-title">Fyll i beställningsformuläret</div>
+            <div class="step-desc">Berätta om din budget, vad du ska använda datorn till och eventuella önskemål. Det tar bara ett par minuter.</div>
+          </div>
         </div>
-        <div class="product-card">
-          <img src="images/pro.jpg" alt="Gaming Pro exempel" fetchpriority="high">
-          <h3>Gaming Pro</h3>
-          <p>För den som vill spela de senaste spelen med bra flyt.</p>
+        <div class="how-step reveal reveal-delay-1">
+          <div class="step-num">02</div>
+          <div>
+            <div class="step-title">Vi kontaktar dig med offert</div>
+            <div class="step-desc">Inom 48 timmar hör vi av oss med ett skräddarsytt förslag baserat på exakt dina önskemål och budget.</div>
+          </div>
         </div>
-        <div class="product-card">
-          <img src="images/custom.jpg" alt="Custom Build exempel" fetchpriority="high">
-          <h3>Enthusiast</h3>
-          <p>För dig som vill ha det bästa av det bästa</p>
+        <div class="how-step reveal reveal-delay-2">
+          <div class="step-num">03</div>
+          <div>
+            <div class="step-title">Byggnad & testning</div>
+            <div class="step-desc">Vi bygger din dator noggrant och kör stresstest för att säkerställa att allt fungerar perfekt. Inga genvägar.</div>
+          </div>
+        </div>
+        <div class="how-step reveal reveal-delay-3">
+          <div class="step-num">04</div>
+          <div>
+            <div class="step-title">Leverans</div>
+            <div class="step-desc">Din dator skickas eller hämtas. Vi finns tillgängliga för frågor och support även efter leverans.</div>
+          </div>
         </div>
       </div>
-    </section>
-
-    <section id="bestall" class="card">
-      <h2>Beställ din dator</h2>
-      <p>Fyll i formuläret nedan så återkommer vi med en offert baserat på dina behov.</p>
-      <!-- Formspree form with previous fields -->
-      <form action="https://formspree.io/f/xkgvdjgj" method="POST">
-        <input type="text" name="namn" placeholder="Ditt namn" required>
-        <input type="email" name="email" placeholder="Din e-post" required>
-        <input type="tel" name="telefon" placeholder="Ditt telefonnummer" required>
-        <select name="budget" required>
-          <option value="">Välj budget</option>
-          <option value="7000-10000">7000 - 10 000 kr</option>
-          <option value="10 000-13 000">10 000 - 13 000 kr</option>
-          <option value="13 000+">13 000 kr +</option>
-        </select>
-        <textarea name="anvandning" rows="4" placeholder="Vad ska datorn användas till? (t.ex. gaming, skolarbete, streaming)" required></textarea>
-        <button type="submit">Skicka beställning</button>
-      </form>
-      <p id="thanks">Tack! Vi har mottagit din beställning och besvarar dig inom kort.</p>
-    </section>
-
-    <section id="kontakt" class="card">
-      <h2>Kontakt</h2>
-      <p>Vill du veta mer eller beställa en dator? Kontakta oss!</p>
-      <p>Email: <a href="mailto:nordicbuilds@hotmail.com" style="color:#00d4ff;">nordicbuilds@hotmail.com</a></p>
-    </section>
+    </div>
+    <div class="how-visual reveal">
+      <div class="visual-pc">🖥️</div>
+      <div class="how-visual-list" style="width:100%;position:relative">
+        <div style="font-family:'JetBrains Mono',monospace;font-size:0.7rem;color:var(--cyan);margin-bottom:1.2rem;letter-spacing:0.1em">// SYSTEM_STATUS</div>
+        <div class="how-visual-item">
+          <div class="how-visual-item-dot dot-green"></div>
+          <div class="how-visual-item-text">Komponenter granskade</div>
+          <div class="how-visual-item-val">✓ OK</div>
+        </div>
+        <div class="how-visual-item">
+          <div class="how-visual-item-dot dot-green"></div>
+          <div class="how-visual-item-text">Stresstest genomfört</div>
+          <div class="how-visual-item-val">✓ OK</div>
+        </div>
+        <div class="how-visual-item">
+          <div class="how-visual-item-dot dot-green"></div>
+          <div class="how-visual-item-text">Temperaturkontroll</div>
+          <div class="how-visual-item-val">42°C</div>
+        </div>
+        <div class="how-visual-item">
+          <div class="how-visual-item-dot dot-yellow"></div>
+          <div class="how-visual-item-text">Kabelhantering</div>
+          <div class="how-visual-item-val">Snygg</div>
+        </div>
+        <div class="how-visual-item">
+          <div class="how-visual-item-dot dot-blue"></div>
+          <div class="how-visual-item-text">Redo för leverans</div>
+          <div class="how-visual-item-val">→ Ja</div>
+        </div>
+        <div style="margin-top:1.5rem;padding:1rem 1.5rem;background:rgba(34,197,94,0.08);border:1px solid rgba(34,197,94,0.2);border-radius:8px;font-size:0.8rem;color:#4ade80;font-family:'JetBrains Mono',monospace;">
+          ✓ Din dator är redo!
+        </div>
+      </div>
+    </div>
   </div>
+</section>
 
-  <footer>
-    <section id="om-oss">
-     <div class="om-oss">
-      <h3>Om oss</h3>
-      <p>Vi erbjuder prisvärda datorer byggda med fokus på kvalitet och prestanda. Alla datorer vi bygger testas noggrant innan leverans, så att du kan känna dig trygg med ditt köp. Vi är ett ungt team som älskar gaming och teknik, och vårt mål är att göra datorer mer prisvärda och anpassade för just dig!<p>
+<!-- WHY US -->
+<section class="why" id="om-oss">
+  <div style="text-align:center;max-width:600px;margin:0 auto 1rem">
+    <p class="section-label reveal">// Om oss</p>
+    <h2 class="section-title reveal reveal-delay-1">Varför välja<br>Nordic Builds?</h2>
+    <p class="section-sub reveal reveal-delay-2" style="max-width:100%;margin:0 auto">Vi är ett ungt team som brinner för teknik och gaming. Vårt mål är enkelt: ge dig en dator du älskar, till ett pris som känns rätt.</p>
+  </div>
+  <div class="why-grid">
+    <div class="why-card reveal">
+      <div class="why-icon" style="font-size:1rem;font-family:'JetBrains Mono',monospace;color:var(--cyan)">[01]</div>
+      <div class="why-title">100% skräddarsytt</div>
+      <div class="why-text">Ingen standardlösning. Varje dator byggs exakt efter dina behov, önskemål och budget. Du bestämmer.</div>
+    </div>
+    <div class="why-card reveal reveal-delay-1">
+      <div class="why-icon" style="font-size:1rem;font-family:'JetBrains Mono',monospace;color:var(--cyan)">[02]</div>
+      <div class="why-title">Noggrant testat</div>
+      <div class="why-text">Varje dator genomgår stresstest och kvalitetskontroll innan leverans. Du kan känna dig trygg med ditt köp.</div>
+    </div>
+    <div class="why-card reveal reveal-delay-2">
+      <div class="why-icon" style="font-size:1rem;font-family:'JetBrains Mono',monospace;color:var(--cyan)">[03]</div>
+      <div class="why-title">Äkta prisvärdhet</div>
+      <div class="why-text">Vi tar inte ut onödiga marginaler. Du betalar för komponenter och vår tid – ingenting annat.</div>
+    </div>
+    <div class="why-card reveal">
+      <div class="why-icon" style="font-size:1rem;font-family:'JetBrains Mono',monospace;color:var(--cyan)">[04]</div>
+      <div class="why-title">Personlig service</div>
+      <div class="why-text">Vi lyssnar på dig och ger råd längs hela vägen. Tillgängliga för frågor och support efter leverans.</div>
+    </div>
+    <div class="why-card reveal reveal-delay-1">
+      <div class="why-icon" style="font-size:1rem;font-family:'JetBrains Mono',monospace;color:var(--cyan)">[05]</div>
+      <div class="why-title">Snabb process</div>
+      <div class="why-text">Offert inom 48 timmar. Vi är effektiva och håller dig uppdaterad under hela byggprocessen.</div>
+    </div>
+    <div class="why-card reveal reveal-delay-2">
+      <div class="why-icon" style="font-size:1rem;font-family:'JetBrains Mono',monospace;color:var(--cyan)">[06]</div>
+      <div class="why-title">Passion för teknik</div>
+      <div class="why-text">Vi bygger datorer för att vi älskar det. Det märks i kvaliteten och noggrannheten i varje bygge.</div>
+    </div>
+  </div>
+</section>
 
- <p>Nordic Builds är mer än bara datorbygge. Vi brinner för teknik och vill hjälpa fler att upptäcka glädjen i att ha en dator som fungerar perfekt för deras behov.<p>
+<!-- ORDER FORM -->
+<section class="order" id="bestall" aria-label="Beställ skräddarsydd gamingdator">
+  <div class="order-grid">
+    <div class="order-info">
+      <p class="section-label reveal">// Beställ</p>
+      <h2 class="section-title reveal reveal-delay-1">Bygg din<br>drömdator</h2>
+      <p class="section-sub reveal reveal-delay-2">Fyll i formuläret så återkommer vi med en skräddarsydd offert. Helt gratis och utan förpliktelse.</p>
+      <div class="order-features reveal reveal-delay-2">
+        <div class="order-feature"><span class="order-feature-icon">—</span> Offert inom 48 timmar</div>
+        <div class="order-feature"><span class="order-feature-icon">—</span> Helt kostnadsfritt att fråga</div>
+        <div class="order-feature"><span class="order-feature-icon">—</span> Windows ingår i priset</div>
+        <div class="order-feature"><span class="order-feature-icon">—</span> Betalning sker innan byggstart</div>
+        <div class="order-feature"><span class="order-feature-icon">—</span> Support efter leverans</div>
+      </div>
+    </div>
+    <div class="reveal reveal-delay-1">
+      <form id="orderForm">
+        <div class="form-row">
+          <div class="field">
+            <label for="fname">Förnamn</label>
+            <input type="text" id="fname" placeholder="Anna" required>
+          </div>
+          <div class="field">
+            <label for="lname">Efternamn</label>
+            <input type="text" id="lname" placeholder="Svensson" required>
+          </div>
+        </div>
+        <div class="field">
+          <label for="email">E-postadress</label>
+          <input type="email" id="email" placeholder="anna@example.com" required>
+        </div>
+        <div class="field">
+          <label for="phone">Telefonnummer</label>
+          <input type="tel" id="phone" placeholder="070 000 00 00" required>
+        </div>
+        <div class="field">
+          <label for="budget">Budget (kr)</label>
+          <div style="position:relative">
+            <input type="number" id="budget" name="budget" placeholder="Ex. 8 000" min="3000" max="100000" required
+              style="padding-right:3rem"
+              oninput="validateBudget(this)">
+            <span style="position:absolute;right:14px;top:50%;transform:translateY(-50%);color:var(--muted);font-size:0.85rem;pointer-events:none">kr</span>
+          </div>
+          <p class="form-note" id="budget-note" style="transition:color 0.2s">Ange ett belopp mellan 3 000 kr och 100 000 kr.</p>
+        </div>
+        <div class="field">
+          <label for="usage">Primär användning</label>
+          <select id="usage" required>
+            <option value="" disabled selected>Välj användningsområde</option>
+            <option value="gaming">Gaming</option>
+            <option value="gaming-streaming">Gaming + Streaming</option>
+            <option value="work-school">Arbete / Skola</option>
+            <option value="creative">Kreativt (video, foto)</option>
+            <option value="mixed">Blandat</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="wishes">Önskemål & kommentarer</label>
+          <textarea id="wishes" placeholder="Berätta gärna mer! Specifika spel du vill köra, önskemål om design (RGB, case-färg), operativsystem, skärm etc..."></textarea>
+        </div>
+        <p class="form-note">Vi svarar på din e-post inom 48 timmar med ett skräddarsytt förslag.</p>
+        <button type="submit" class="form-submit">Skicka beställning →</button>
+      </form>
+      <div class="form-success" id="formSuccess">
+        <div class="form-success-icon" style="font-family:'Bebas Neue',sans-serif;font-size:3rem;color:var(--cyan)">OK</div>
+        <h3>Tack för din beställning!</h3>
+        <p>Vi har mottagit din förfrågan och återkommer med en offert inom 48 timmar.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
- <p>Hos oss står kunden i centrum. Vi tror att alla ska kunna ha en bra dator utan att betala onödigt mycket. Vi lyssnar på dina önskemål, ger förslag och bygger en dator som passar exakt det du behöver – varken för dyr eller för svag.</p>
+<!-- FAQ -->
+<section class="faq" id="faq" aria-label="Vanliga frågor om gamingdatorer">
+  <div style="max-width:800px;margin:0 auto">
+    <p class="section-label reveal" style="text-align:center">// FAQ</p>
+    <h2 class="section-title reveal reveal-delay-1" style="text-align:center">Vanliga frågor</h2>
+  </div>
+  <div class="faq-grid" style="max-width:900px;margin:0 auto">
+    <div class="faq-item reveal">
+      <div class="faq-q">Ingår operativsystem i priset?<span class="faq-icon">+</span></div>
+      <div class="faq-a">Ja, Windows ingår alltid i priset utan extra kostnad. Du behöver inte tänka på det – vi installerar och aktiverar det åt dig.</div>
+    </div>
+    <div class="faq-item reveal reveal-delay-1">
+      <div class="faq-q">Hur sker leveransen?<span class="faq-icon">+</span></div>
+      <div class="faq-a">Vi erbjuder upphämtning eller fraktar datorn tryggt emballerad. Vi diskuterar det som passar dig bäst när vi kontaktar dig.</div>
+    </div>
+    <div class="faq-item reveal reveal-delay-2">
+      <div class="faq-q">Kan jag välja specifika komponenter?<span class="faq-icon">+</span></div>
+      <div class="faq-a">Absolut! Du kan specificera exakt vilka komponenter du vill ha, eller låta oss rekommendera det bästa för din budget.</div>
+    </div>
+    <div class="faq-item reveal">
+      <div class="faq-q">Har ni garanti på datorerna?<span class="faq-icon">+</span></div>
+      <div class="faq-a">Komponenterna har tillverkargaranti. Vi finns dessutom tillgängliga för support och hjälp efter leverans.</div>
+    </div>
+    <div class="faq-item reveal reveal-delay-1">
+      <div class="faq-q">Hur lång tid tar det att bygga?<span class="faq-icon">+</span></div>
+      <div class="faq-a">Efter att vi kommit överens om offerten tar bygget vanligtvis 1–2 veckor beroende på komponenttillgång och vår kapacitet.</div>
+    </div>
+    <div class="faq-item reveal reveal-delay-2">
+      <div class="faq-q">Hur fungerar betalningen?<span class="faq-icon">+</span></div>
+      <div class="faq-a">Betalning sker innan vi påbörjar bygget. Alla våra datorer byggs på beställning, så vi börjar aldrig bygga utan att affären är bekräftad.</div>
+    </div>
+  </div>
+</section>
 
-    </section>
-    <div class="om-oss">
-      <p class="copyright">&copy; 2025 Nordic Builds UF. Alla rättigheter förbehållna.</p>
-  </footer>
+<!-- CONTACT -->
+<section class="contact" id="kontakt">
+  <div class="contact-inner">
+    <p class="section-label reveal" style="text-align:center">// Kontakt</p>
+    <h2 class="section-title reveal reveal-delay-1" style="text-align:center">Hör av dig</h2>
+    <p class="section-sub reveal reveal-delay-2" style="max-width:100%;text-align:center;margin:0 auto">Har du frågor, funderingar eller vill du bara snacka teknik? Vi svarar alltid.</p>
+    <div class="contact-card reveal reveal-delay-1">
+      <p style="color:var(--muted);font-size:0.85rem;margin-bottom:1rem;letter-spacing:0.1em;text-transform:uppercase;font-weight:500">Maila oss direkt</p>
+      <a href="mailto:nordicbuilds@hotmail.com" class="contact-email">nordicbuilds@hotmail.com</a>
+      <div class="contact-or">— eller —</div>
+      <a href="#bestall" class="btn-primary" style="display:inline-flex;margin:0 auto">Fyll i beställningsformuläret →</a>
+    </div>
+  </div>
+</section>
 
-  <script>
-    const links = document.querySelectorAll('.scroll-link');
-    links.forEach(link => {
-      link.addEventListener('click', e => {
-        e.preventDefault();
-        const id = link.getAttribute('href').substring(1);
-        const target = document.getElementById(id);
-        const offset = document.querySelector('header').offsetHeight + 10;
-        const bodyRect = document.body.getBoundingClientRect().top;
-        const elementRect = target.getBoundingClientRect().top;
-        const elementPosition = elementRect - bodyRect - offset;
-        window.scrollTo({ top: elementPosition, behavior: 'smooth' });
-      });
-    });
-    let lastScroll = 0;
-const headerEl = document.querySelector("header");
+<!-- FOOTER -->
+<footer role="contentinfo" aria-label="Sidfot – Nordic Builds">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div class="footer-logo">Nordic Builds</div>
+      <p class="footer-tagline">Vi bygger prisvärda, skräddarsydda datorer med fokus på kvalitet, prestanda och nöjda kunder. Kontakta oss idag.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Navigera</h4>
+      <a href="#hem">Hem</a>
+      <a href="#hur">Hur det fungerar</a>
+      <a href="#om-oss">Om oss</a>
+    </div>
+    <div class="footer-col">
+      <h4>Kom igång</h4>
+      <a href="#bestall">Beställ dator</a>
+      <a href="mailto:nordicbuilds@hotmail.com">Kontakta oss</a>
+      <a href="#faq">Vanliga frågor</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p class="footer-copy">© 2025 Nordic Builds. Alla rättigheter förbehållna.</p>
+    <p class="footer-mono">Built by VC Webb</p>
+  </div>
+</footer>
 
-window.addEventListener("scroll", () => {
-  const current = window.scrollY;
-  if (current > lastScroll && current > 80) {
-    headerEl.classList.add("hide");
-  } else {
-    headerEl.classList.remove("hide");
+<script>
+  // Custom cursor - instant, no lag
+  const cursor = document.getElementById('cursor');
+  const cursorRing = document.getElementById('cursorRing');
+  document.addEventListener('mousemove', e => {
+    cursor.style.left = e.clientX + 'px';
+    cursor.style.top = e.clientY + 'px';
+    cursorRing.style.left = e.clientX + 'px';
+    cursorRing.style.top = e.clientY + 'px';
+  });
+  document.querySelectorAll('a, button, .faq-q, .how-step, .why-card').forEach(el => {
+    el.addEventListener('mouseenter', () => cursorRing.classList.add('hovering'));
+    el.addEventListener('mouseleave', () => cursorRing.classList.remove('hovering'));
+  });
+
+  // Budget validation
+  function validateBudget(input) {
+    const note = document.getElementById('budget-note');
+    const val = parseInt(input.value);
+    if (!input.value) {
+      note.textContent = 'Ange ett belopp mellan 3 000 kr och 100 000 kr.';
+      note.style.color = '';
+      input.setCustomValidity('');
+    } else if (val < 3000) {
+      note.textContent = 'Beloppet måste vara minst 3 000 kr.';
+      note.style.color = '#f87171';
+      input.setCustomValidity('Minst 3 000 kr');
+    } else if (val > 100000) {
+      note.textContent = 'Beloppet får inte överstiga 100 000 kr.';
+      note.style.color = '#f87171';
+      input.setCustomValidity('Max 100 000 kr');
+    } else {
+      note.textContent = 'Ser bra ut!';
+      note.style.color = '#4ade80';
+      input.setCustomValidity('');
+    }
   }
-  lastScroll = current;
-});
-  </script>
+
+  // Navbar scroll
+  const navbar = document.getElementById('navbar');
+  window.addEventListener('scroll', () => {
+    navbar.classList.toggle('scrolled', window.scrollY > 50);
+  });
+
+  // Hamburger
+  const hamburger = document.getElementById('hamburger');
+  const mobileMenu = document.getElementById('mobileMenu');
+  hamburger.addEventListener('click', () => mobileMenu.classList.toggle('open'));
+  function closeMenu() { mobileMenu.classList.remove('open'); }
+
+  // Scroll reveal
+  const reveals = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+  }, { threshold: 0.1 });
+  reveals.forEach(r => observer.observe(r));
+
+  // FAQ accordion
+  document.querySelectorAll('.faq-q').forEach(q => {
+    q.addEventListener('click', () => {
+      const item = q.closest('.faq-item');
+      const wasOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+      if (!wasOpen) item.classList.add('open');
+    });
+  });
+
+  // Form submit
+  document.getElementById('orderForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const btn = this.querySelector('.form-submit');
+    btn.textContent = 'Skickar...';
+    btn.disabled = true;
+    setTimeout(() => {
+      this.style.display = 'none';
+      document.getElementById('formSuccess').classList.add('show');
+    }, 1200);
+  });
+
+  // Counter animation
+  function animateCount(el, target, suffix = '') {
+    let current = 0;
+    const step = target / 60;
+    const interval = setInterval(() => {
+      current += step;
+      if (current >= target) { current = target; clearInterval(interval); }
+      el.textContent = Math.floor(current) + suffix;
+    }, 16);
+  }
+</script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
