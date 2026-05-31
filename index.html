@@ -576,14 +576,17 @@
     position: absolute; top: -50%; left: -50%;
     width: 200%; height: 200%;
     background: radial-gradient(ellipse 40% 40% at 50% 0%, rgba(59,130,246,0.15), transparent 70%);
+    pointer-events: none;
   }
   .contact-email {
     font-family: 'Bebas Neue', sans-serif;
     font-size: 2rem; letter-spacing: 0.05em;
     color: var(--accent); text-decoration: none;
     transition: color 0.2s;
+    cursor: pointer;
+    display: inline-block;
   }
-  .contact-email:hover { color: var(--cyan); }
+  .contact-email:hover { color: var(--cyan); text-decoration: underline; }
   .contact-or { color: var(--muted); margin: 1.5rem 0; font-size: 0.85rem; }
 
   /* FOOTER */
@@ -877,7 +880,7 @@
         </div>
         <div class="field">
           <label for="wishes">Önskemål & kommentarer</label>
-          <textarea id="wishes" name="önskemål" placeholder="Berätta gärna mer! Specifika spel du vill köra, önskemål om design (RGB, case-färg), operativsystem etc..."></textarea>
+          <textarea id="wishes" name="önskemål" placeholder="Berätta gärna mer! Specifika spel du vill köra, önskemål om design (RGB, case-färg), operativsystem, skärm etc..."></textarea>
         </div>
         <p class="form-note">Vi svarar på din e-post inom 48 timmar med ett skräddarsytt förslag.</p>
         <button type="submit" class="form-submit">Skicka beställning →</button>
